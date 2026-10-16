@@ -33,11 +33,14 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'open_and_pass_door = open_and_pass_door.open_and_pass_door:main',
+            'open_and_pass_doo = open_and_pass_doo.open_and_pass_doo:main',
             'gz_twist_publisher = gz_twist_publisher.gz_twist_publisher:main',
             'image_mean_feature_x = image_mean_feature_x.image_mean_feature_x:main',
             'flaky_door_opener = flaky_door_opener.flaky_door_opener:main',
             'gz_pose_publisher = gz_pose_publisher.gz_pose_publisher:main',
             'cmd_vel_noise_injector = cmd_vel_noise_injector.cmd_vel_noise_injector:main',
+            'feature_mean_counter = feature_mean_counter.feature_mean_counter:main',
         ],
     }
 )
